@@ -12,7 +12,6 @@ app.use(nodejsRouter)
 
 app.get('/',(req,res)=>{
     res.sendFile("public/index.html")
-    //res.render("public/index.html")
 })
 
 app.listen(PORT,()=>{
