@@ -13,10 +13,6 @@ app.use(greetingRouter)
 app.use(nodejsRouter)
 
 app.get('/',(req,res)=>{
-    res.send("Hi there")
-})
-
-app.get('/index',(req,res)=>{
     res.sendFile(path.join(__dirname,'public' ,'index.html'))
 })
 
